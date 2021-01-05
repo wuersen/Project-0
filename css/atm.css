@@ -1,0 +1,21 @@
+h1 {
+font-size: 50px;
+}
+
+.box {
+  font-size:80px;
+  display:inline-block;
+  text-align: center;
+  height: 100px;
+  width : 100px;
+  background-color: yellow;
+  vertical-align: top;
+  margin-top:4px;
+}
+
+.display {
+  height:30px;
+  width:152px;
+  display:inline-block;
+  background-color: orange;
+}
