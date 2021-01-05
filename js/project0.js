@@ -65,7 +65,7 @@ let countTo9 = 0;
 
 //if its a draw:
 
-if ($('.message').text()==='' && ountTo9 === 9){
+if ($('.message').text()==='' && countTo9 === 9){
 $('.message').text(`🍋 It's a draw 🍊`);
 }
 
