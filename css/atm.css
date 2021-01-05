@@ -1,4 +1,11 @@
+body{
+  background-color:lightyellow;
+}
 h1 {
+  text-align: center;
+
+width:320px;
+margin:0 auto;
 opacity:0;
 font-size: 50px;
 text-shadow: 2px 2px orange
@@ -6,11 +13,13 @@ text-shadow: 2px 2px orange
 
 .box {
 
+
   font-size:80px;
   display:inline-block;
   text-align: center;
-  height: 100px;
-  width : 100px;
+  height: 101.7px;
+  width : 101.7px;
+  margin:0 auto;
   background-color: yellow;
   vertical-align: top;
   margin-top:4px;
@@ -19,28 +28,45 @@ text-shadow: 2px 2px orange
 
 .display {
   opacity:0;
+
   padding:2px;
   height:30px;
-  width:148.3px;
+  width:151.2px;
   display:inline-block;
   background-color: orange;
 }
 
-.container {
+.displayContainer{
+  width:316px;
+  margin:0 auto;
 
+}
+
+
+
+.container {
+  width:100%;
+  background-color: lightyellow;
   font-family: 'Comfortaa', cursive;
 }
 
 .line1, .line2, .line3{
+
+  margin:0 auto;
+  width:315px;
+  height:105px;
+
   opacity:0;
 
 }
 
 .message{
   opacity:0;
+  margin:0 auto;
+
   margin-top:4px;
   height:50px;
-  width:309px;
+  width:315px;
   background-color: orange;
   text-align:center;
   font-size: 20 px;
