@@ -36,36 +36,40 @@ let countTo9 = 0;
         $(`#line${i}Box${j}`).text()===$(`#line${i}Box${j+2}`).text()&&
         $(`#line${i}Box${j}`).text()!==''){
         $(`#line${i}Box${j}, #line${i}Box${j+1}, #line${i}Box${j+2}`).css('background-color','orange');
-        $('.message').text(`Player${$(this).text()}wins`);
+        $('.message').text(`Player${$(this).text()}  wins`);
         }
 //winning by having 3 in a column
     if ($(`#line${i}Box${j}`).text()===$(`#line${i+1}Box${j}`).text()&&
         $(`#line${i}Box${j}`).text()===$(`#line${i+2}Box${j}`).text()&&
         $(`#line${i}Box${j}`).text()!==''){
         $(`#line${i}Box${j}, #line${i+1}Box${j}, #line${i+2}Box${j}`).css('background-color','orange');
-        $('.message').text(`Player${$(this).text()}wins`);
+        $('.message').text(`Player${$(this).text()} wins`);
         }
 //winning by having 3 in a line from top left to bottom right
     if ($(`#line${i}Box${j}`).text()===$(`#line${i+1}Box${j+1}`).text()&&
         $(`#line${i+1}Box${j+1}`).text()===$(`#line${i+2}Box${j+2}`).text()&&
         $(`#line${i}Box${j}`).text()!==''){
         $(`#line${i}Box${j}, #line${i+1}Box${j+1}, #line${i+2}Box${j+2}`).css('background-color','orange');
-        $('.message').text(`Player${$(this).text()}wins`);
+        $('.message').text(`Player${$(this).text()} wins`);
         }
 //winning by having 3 in a line from bottm left to top right
     if ($(`#line${i}Box${j}`).text()===$(`#line${i-1}Box${j+1}`).text()&&
         $(`#line${i}Box${j}`).text()===$(`#line${i+1}Box${j-1}`).text()&&
         $(`#line${i}Box${j}`).text()!==''){
         $(`#line${i}Box${j}, #line${i-1}Box${j+1}, #line${i+1}Box${j-1}`).css('background-color','orange');
-        $('.message').text(`Player${$(this).text()}wins`);
+        $('.message').text(`Player${$(this).text()} wins`);
         }
+
     }//end of inner for-loop
 }//end of entire for-loop
 
-//if no player wins:
-     if (countTo9 === 9){
-     $('.message').text(`🍋 It's a draw 🍊`);
-     }
+//if its a draw:
+
+if ($('.message').text()==='' && ountTo9 === 9){
+$('.message').text(`🍋 It's a draw 🍊`);
+}
+
+
 
 
 
