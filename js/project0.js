@@ -15,33 +15,38 @@ let player2Score = 0;
 
 // //Select Player
 $('.display').click(function(){
-  if ($('.message').hasClass('selectionCompleted')){
-
-  }else{
+   $('.display').css('border-color','orange')
    $(this).css('border-color','#739900');
    $('.message').text($(this).text().slice(8,10))
    $('.message').text(`${$(this).text().slice(8,10)} turn`);
-   $('.message').addClass('selectionCompleted')
+   $('.display').addClass('selectionMade')
+   // $(this).addClass('selected')
    if($(this).text().includes('🍊')){
-   $('.box').addClass('playedX');
+   $('.box').addClass('playedLemon');
    }
 
-  }
+   if($(this).text().includes('🍋')){
+   $('.box').removeClass('playedLemon');
+   }
+
+
 }); //end of function
 
 
 
 
   $( '.box' ).click(function() {
-    if ($(this).text()!==''){}
+    if(!$('.display').hasClass('selectionMade')){alert('selectPlayer')}
 
-    else if ($(this).hasClass('playedX')){
+    else if ($(this).text()!==''){}
+
+    else if ($(this).hasClass('playedLemon')){
       $(this).text('🍊');
-      $('.box').removeClass('playedX')
+      $('.box').removeClass('playedLemon')
       countTo9 = countTo9 + 1;
     }else{
     $(this).text('🍋');
-    $('.box').addClass('playedX')
+    $('.box').addClass('playedLemon')
     countTo9 = countTo9 + 1;
     }
 
@@ -93,21 +98,23 @@ $('.message').text(`🍋 It's a draw 🍊`);
 
 if ($('.message').text().includes('🍋 wins')){
   player1Score = player1Score + 1;
-$('#player1').text(`Player 🍋 : ${player1Score}`);
+$('#player1').text(` Player 🍋 : ${player1Score}`);
 }
 
 if ($('.message').text().includes('🍊 wins')){
   player2Score = player2Score + 1;
-$('#player2').text(`Player 🍊 : ${player2Score}`);
+$('#player2').text(` Player 🍊 : ${player2Score}`);
 }
 
 //reset after each game
   $('.message' ).click(function() {
     $('.box').text('');
-    $('.display').removeClass('selectionCompleted');
+    $('.display').removeClass('selectionMade');
+    $('.display').css('border-color','orange')
     $('.message').css('background-color', 'orange');
     $('.message').text('Select player to go first : 🍋 or 🍊');
     $('.box').css('background-color','yellow');
+    $
     countTo9 = 0;
 
 });//end of reset function
