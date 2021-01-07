@@ -5,18 +5,18 @@ Simple game created from scratch using HTML, CSS and Javascript
 My first project at General Assembly
 
 HTML:
-  *<head> contains title and links to CSS, animation, javascript, jquery, and google-font.  
-  *<h1> and <div> for content of game
+  1 <head> contains title and links to CSS, animation, javascript, jquery, and google-font.  
+  2 <h1> and <div> for content of game
 
 CSS:
-  *margin: O auto - to center all elements
-  *@media for <h1> - better display for mobile phone screen
-  *added a 'bounce' animatino to game title.
+  1 margin: O auto - to center all elements
+  2 @media for <h1> - better display for mobile phone screen
+  3 added a 'bounce' animatino to game title.
 
 
 Javascript:
-  *Jquery fadeTo to make elements gradually appear on page.
-  *.addClass/removeClass to switch between symbols, same logic used to 'finish' and 'reset' game.
+  1 Jquery fadeTo to make elements gradually appear on page.
+  2 .addClass/removeClass to switch between symbols, same logic used to 'finish' and 'reset' game.
 
  ```javascript
  if ($(this).hasClass('playOrange')){
