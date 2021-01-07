@@ -5,7 +5,7 @@ Simple game created from scratch using HTML, CSS and Javascript
 My first project at General Assembly
 
 HTML:
-  1 <head> contains title and links to CSS, animation, javascript, jquery, and google-font.  
+  1 <head> contains title and links to CSS, animation, javascript, jquery
   2 <h1> and <div> for content of game
 
 CSS:
