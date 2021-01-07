@@ -1,8 +1,32 @@
 Tic Tac Toe
 
-Simple game created using HTML, CSS and Javascript
+Simple game created from scratch using HTML, CSS and Javascript
 
-1.select player
-2.place symbol in a spot in turns, player that has 3 same symbols in a straight line will win
-3.can play multiple rounds and scores are displayed on top of the game board
-4.have fun with 🍊 and 🍋
+My first project at General Assembly
+
+1.HTML:
+  *<head> contains title and links to CSS, animation, javascript, jquery, and google-font.  
+  *<h1> and <div> for content of game
+
+2.CSS:
+  *margin: O auto - to center all elements
+  *@media for <h1> - better display for mobile phone screen
+  *added a 'bounce' animatino to game title.
+
+
+3.Javascript:
+  *Jquery fadeTo to make elements gradually appear on page.
+  *.addClass/removeClass to switch between symbols, same logic used to 'finish' and 'reset' game.
+
+ ```javascript
+ if ($(this).hasClass('playOrange')){
+   $(this).text('🍊');
+   $('.box').removeClass('playOrange')
+   $('.message').text('🍋 turn');
+   countTo9 = countTo9 + 1;
+ }else{
+ $(this).text('🍋');
+ $('.box').addClass('playOrange')
+ $('.message').text('🍊 turn');
+ countTo9 = countTo9 + 1;
+```

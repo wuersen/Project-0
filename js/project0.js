@@ -62,29 +62,30 @@ $( '.box' ).click(function() {
 //determine winner
          for (let i = 1; i<4; i++){
          for (let j = 1; j<4; j++){
+if ($('.message').text().includes('continue')){}
 //winning by have 3 in a row
-    if ($(`#line${i}Box${j}`).text()===$(`#line${i}Box${j+1}`).text()&&
+else if ($(`#line${i}Box${j}`).text()===$(`#line${i}Box${j+1}`).text()&&
         $(`#line${i}Box${j}`).text()===$(`#line${i}Box${j+2}`).text()&&
         $(`#line${i}Box${j}`).text()!==''){
         $(`#line${i}Box${j}, #line${i}Box${j+1}, #line${i}Box${j+2}`).css('background-color','orange');
         $('.message').text(`Player ${$(this).text()} wins, click here to continue`);
         }
 //winning by having 3 in a column
-    if ($(`#line${i}Box${j}`).text()===$(`#line${i+1}Box${j}`).text()&&
+else if ($(`#line${i}Box${j}`).text()===$(`#line${i+1}Box${j}`).text()&&
         $(`#line${i}Box${j}`).text()===$(`#line${i+2}Box${j}`).text()&&
         $(`#line${i}Box${j}`).text()!==''){
         $(`#line${i}Box${j}, #line${i+1}Box${j}, #line${i+2}Box${j}`).css('background-color','orange');
         $('.message').text(`Player ${$(this).text()} wins, click here to continue`);
         }
 //winning by having 3 in a line from top left to bottom right
-    if ($(`#line${i}Box${j}`).text()===$(`#line${i+1}Box${j+1}`).text()&&
+else if ($(`#line${i}Box${j}`).text()===$(`#line${i+1}Box${j+1}`).text()&&
         $(`#line${i+1}Box${j+1}`).text()===$(`#line${i+2}Box${j+2}`).text()&&
         $(`#line${i}Box${j}`).text()!==''){
         $(`#line${i}Box${j}, #line${i+1}Box${j+1}, #line${i+2}Box${j+2}`).css('background-color','orange');
         $('.message').text(`Player ${$(this).text()} wins, click here to continue`);
         }
 //winning by having 3 in a line from bottm left to top right
-    if ($(`#line${i}Box${j}`).text()===$(`#line${i-1}Box${j+1}`).text()&&
+else if ($(`#line${i}Box${j}`).text()===$(`#line${i-1}Box${j+1}`).text()&&
         $(`#line${i}Box${j}`).text()===$(`#line${i+1}Box${j-1}`).text()&&
         $(`#line${i}Box${j}`).text()!==''){
         $(`#line${i}Box${j}, #line${i-1}Box${j+1}, #line${i+1}Box${j-1}`).css('background-color','orange');
