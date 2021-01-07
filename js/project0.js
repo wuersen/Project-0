@@ -127,7 +127,8 @@ $('#player2').text(` Player 🍊 : ${player2Score}`);
   $('.message' ).click(function() {
     $('.box').text('');
     $('.box').css('background-color','yellow');
-    $('.box').removeClass('gameFinished');
+    $('.box').removeClass('gameFinished')
+    $('.box').removeClass('playOrange');
     $('.display').removeClass('gameFinished')
     $('.message').css('background-color', 'orange');
     $('#player1 , #player2').css('border-color', 'orange');
@@ -136,6 +137,7 @@ $('#player2').text(` Player 🍊 : ${player2Score}`);
        $('#player2').css('border-color', '#739900');
        $('.message').text('🍊 turn');
        player = 2;
+       $('.box').addClass('playOrange')
 
    }else if (player === 2){
       $('#player1').css('border-color', '#739900');
