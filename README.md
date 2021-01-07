@@ -5,12 +5,12 @@ Simple game created from scratch using HTML, CSS and Javascript
 My first project at General Assembly
 
 HTML:
-  1 <head> contains title and links to CSS, animation, javascript, jquery
-  2 <h1> and <div> for content of game
+  1 head of HTML contains links to CSS, animation, javascript, jquery
+
 
 CSS:
   1 margin: O auto - to center all elements
-  2 @media for <h1> - better display for mobile phone screen
+  2 @media for better display for mobile phone screen
   3 added a 'bounce' animatino to game title.
 
 
