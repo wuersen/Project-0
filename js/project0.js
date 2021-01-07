@@ -67,28 +67,28 @@ if ($('.message').text().includes('continue')){}
 else if ($(`#line${i}Box${j}`).text()===$(`#line${i}Box${j+1}`).text()&&
         $(`#line${i}Box${j}`).text()===$(`#line${i}Box${j+2}`).text()&&
         $(`#line${i}Box${j}`).text()!==''){
-        $(`#line${i}Box${j}, #line${i}Box${j+1}, #line${i}Box${j+2}`).css('background-color','orange');
+        $(`#line${i}Box${j}, #line${i}Box${j+1}, #line${i}Box${j+2}`).css({'background-color':'orange','font-size': '95px', 'border-bottom':'2px solid green'});
         $('.message').text(`Player ${$(this).text()} wins, click here to continue`);
         }
 //winning by having 3 in a column
 else if ($(`#line${i}Box${j}`).text()===$(`#line${i+1}Box${j}`).text()&&
         $(`#line${i}Box${j}`).text()===$(`#line${i+2}Box${j}`).text()&&
         $(`#line${i}Box${j}`).text()!==''){
-        $(`#line${i}Box${j}, #line${i+1}Box${j}, #line${i+2}Box${j}`).css('background-color','orange');
+        $(`#line${i}Box${j}, #line${i+1}Box${j}, #line${i+2}Box${j}`).css({'background-color':'orange','font-size': '95px', 'border-bottom':'2px solid green'});
         $('.message').text(`Player ${$(this).text()} wins, click here to continue`);
         }
 //winning by having 3 in a line from top left to bottom right
 else if ($(`#line${i}Box${j}`).text()===$(`#line${i+1}Box${j+1}`).text()&&
         $(`#line${i+1}Box${j+1}`).text()===$(`#line${i+2}Box${j+2}`).text()&&
         $(`#line${i}Box${j}`).text()!==''){
-        $(`#line${i}Box${j}, #line${i+1}Box${j+1}, #line${i+2}Box${j+2}`).css('background-color','orange');
+        $(`#line${i}Box${j}, #line${i+1}Box${j+1}, #line${i+2}Box${j+2}`).css({'background-color':'orange','font-size': '95px', 'border-bottom':'2px solid green'});
         $('.message').text(`Player ${$(this).text()} wins, click here to continue`);
         }
 //winning by having 3 in a line from bottm left to top right
 else if ($(`#line${i}Box${j}`).text()===$(`#line${i-1}Box${j+1}`).text()&&
         $(`#line${i}Box${j}`).text()===$(`#line${i+1}Box${j-1}`).text()&&
         $(`#line${i}Box${j}`).text()!==''){
-        $(`#line${i}Box${j}, #line${i-1}Box${j+1}, #line${i+1}Box${j-1}`).css('background-color','orange');
+        $(`#line${i}Box${j}, #line${i-1}Box${j+1}, #line${i+1}Box${j-1}`).css({'background-color':'orange','font-size': '95px', 'border-bottom':'2px solid green'});
         $('.message').text(`Player ${$(this).text()} wins, click here to continue`);
         }
    }//end of inner for-loop
