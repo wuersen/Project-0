@@ -2,6 +2,7 @@ body{
   background-color:lightyellow;
 }
 h1 {
+font-weight:600;
 text-align: center;
 color:yellow;
 width:320px;
