@@ -11,9 +11,11 @@ $('.message').fadeTo(1000, 0.8)
 let countTo9 = 0;
 let player1Score = 0;
 let player2Score = 0;
+let player = 0 //player1 = 1, player2 = 2
 
 
-// //Select Player
+
+/////////////////         1. Choose player           ///////////////////////
 $('.display').click(function(){
    $('.display').css('border-color','orange')
    $(this).css('border-color','#739900');
@@ -22,32 +24,38 @@ $('.display').click(function(){
    $('.display').addClass('selectionMade')
    // $(this).addClass('selected')
    if($(this).text().includes('🍊')){
-   $('.box').addClass('playedLemon');
+    player = 2;
+   $('.box').addClass('playOrange');
    }
 
-   if($(this).text().includes('🍋')){
-   $('.box').removeClass('playedLemon');
+   else if($(this).text().includes('🍋')){
+    player = 1;
+   $('.box').removeClass('playOrange');
    }
+}) //end of function
 
+//////////////              2. Play game              /////////////////////
+$( '.box' ).click(function() {
+//Ask player to select player before playing
+    if(!$('.display').hasClass('selectionMade')){alert('Select Player')}
 
-}); //end of function
-
-
-
-
-  $( '.box' ).click(function() {
-    if(!$('.display').hasClass('selectionMade')){alert('selectPlayer')}
+//Disable the game after a player wins so no one can keep playing and players have to start the next round
+    else if($('.box').hasClass('gameFinished')){alert('Click continue to restart')}
 
     else if ($(this).text()!==''){}
 
-    else if ($(this).hasClass('playedLemon')){
+    else if ($(this).hasClass('playOrange')){
       $(this).text('🍊');
-      $('.box').removeClass('playedLemon')
+      $('.box').removeClass('playOrange')
+      $('.message').text('🍋 turn');
       countTo9 = countTo9 + 1;
+
     }else{
     $(this).text('🍋');
-    $('.box').addClass('playedLemon')
+    $('.box').addClass('playOrange')
+    $('.message').text('🍊 turn');
     countTo9 = countTo9 + 1;
+
     }
 
 
@@ -86,43 +94,59 @@ $('.display').click(function(){
     }//end of inner for-loop
 }//end of entire for-loop
 
-if ($('.message').text().includes('wins')){
+//if its a draw:
+if ($('.message').text().includes('wins')===false && countTo9 === 9){
+$('.message').text(`🍋 It's a draw 🍊 , click here to continue`);
+}
+
+//Change background-color of the message board
+if ($('.message').text().includes('continue')){
   $('.message').css('background-color', 'yellow');
 }
 
-//if its a draw:
+//Update winner's score
+if ($('.display').hasClass('gameFinished')){
 
-if ($('.message').text().includes('wins')===false && countTo9 === 9){
-$('.message').text(`🍋 It's a draw 🍊`);
-}
-
-if ($('.message').text().includes('🍋 wins')){
+}else if ($('.message').text().includes('🍋 wins')){
   player1Score = player1Score + 1;
 $('#player1').text(` Player 🍋 : ${player1Score}`);
-}
-
-if ($('.message').text().includes('🍊 wins')){
+}else if ($('.message').text().includes('🍊 wins')){
   player2Score = player2Score + 1;
 $('#player2').text(` Player 🍊 : ${player2Score}`);
 }
 
-//reset after each game
+//End the game after one player wins (so keep clicking on .box wont mess up result score or game result)
+    if ($('.message').text().includes('wins')||  $('.message').text().includes('draw')){
+    $('.box').addClass('gameFinished')
+    $('.display').addClass('gameFinished')
+    }
+
+
+}); ///////////// end of 2. play game function /////////////////////////////
+
+
+// reset after each game
   $('.message' ).click(function() {
     $('.box').text('');
-    $('.display').removeClass('selectionMade');
-    $('.display').css('border-color','orange')
-    $('.message').css('background-color', 'orange');
-    $('.message').text('Select player to go first : 🍋 or 🍊');
     $('.box').css('background-color','yellow');
-    $
+    $('.box').removeClass('gameFinished');
+    $('.display').removeClass('gameFinished')
+    $('.message').css('background-color', 'orange');
+    $('#player1 , #player2').css('border-color', 'orange');
     countTo9 = 0;
+    if (player === 1){
+       $('#player2').css('border-color', '#739900');
+       $('.message').text('🍊 turn');
+       player = 2;
 
+   }else if (player === 2){
+      $('#player1').css('border-color', '#739900');
+      $('.message').text('🍋 turn');
+      player = 1;
+   }
 });//end of reset function
 
 
 
-
-
-}); // end of function
 
 }) //end of code

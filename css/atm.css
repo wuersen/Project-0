@@ -6,8 +6,9 @@ text-align: center;
 color:yellow;
 width:320px;
 margin:0 auto;
+margin-bottom: 10px;
 opacity:0;
-font-size: 50px;
+font-size: 36px;
 text-shadow: 2px 4px orange;
 }
 
@@ -27,10 +28,10 @@ text-shadow: 2px 4px orange;
 }
 
 .display {
-  opacity:0
+  opacity:0;
   padding:2px;
   height:30px;
-  width:133px;
+  width:129px;
   display:inline-block;
   background-color: orange;
 
