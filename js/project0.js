@@ -127,6 +127,8 @@ $('#player2').text(` Player 🍊 : ${player2Score}`);
   $('.message' ).click(function() {
     $('.box').text('');
     $('.box').css('background-color','yellow');
+    $('.box').css('border-bottom','none');
+    $('.box').css('font-size','80')
     $('.box').removeClass('gameFinished')
     $('.box').removeClass('playOrange');
     $('.display').removeClass('gameFinished')
