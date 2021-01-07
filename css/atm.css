@@ -81,5 +81,10 @@ text-shadow: 2px 4px orange;
   background-color: orange;
   text-align:center;
   font-size: 20 px;
+}
 
+@media screen and (max-width: 500px) {
+  h1 {
+  font-size: 30px;
+  }
 }
