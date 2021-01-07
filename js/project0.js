@@ -42,8 +42,9 @@ $( '.box' ).click(function() {
 //Disable the game after a player wins so no one can keep playing and players have to start the next round
     else if($('.box').hasClass('gameFinished')){alert('Click continue to restart')}
 
-    else if ($(this).text()!==''){}
-
+//make objects appear on game board
+    else if ($(this).text()!==''){} //each spot can only be selected once
+////switch symbols between players
     else if ($(this).hasClass('playOrange')){
       $(this).text('🍊');
       $('.box').removeClass('playOrange')
@@ -58,9 +59,8 @@ $( '.box' ).click(function() {
 
     }
 
-
-
-    for (let i = 1; i<4; i++){
+//determine winner
+         for (let i = 1; i<4; i++){
          for (let j = 1; j<4; j++){
 //winning by have 3 in a row
     if ($(`#line${i}Box${j}`).text()===$(`#line${i}Box${j+1}`).text()&&
@@ -90,8 +90,7 @@ $( '.box' ).click(function() {
         $(`#line${i}Box${j}, #line${i-1}Box${j+1}, #line${i+1}Box${j-1}`).css('background-color','orange');
         $('.message').text(`Player ${$(this).text()} wins, click here to continue`);
         }
-
-    }//end of inner for-loop
+   }//end of inner for-loop
 }//end of entire for-loop
 
 //if its a draw:
@@ -104,8 +103,8 @@ if ($('.message').text().includes('continue')){
   $('.message').css('background-color', 'yellow');
 }
 
-//Update winner's score
-if ($('.display').hasClass('gameFinished')){
+//Update score
+if ($('.display').hasClass('gameFinished')){  //do not update more then once
 
 }else if ($('.message').text().includes('🍋 wins')){
   player1Score = player1Score + 1;
@@ -120,8 +119,6 @@ $('#player2').text(` Player 🍊 : ${player2Score}`);
     $('.box').addClass('gameFinished')
     $('.display').addClass('gameFinished')
     }
-
-
 }); ///////////// end of 2. play game function /////////////////////////////
 
 
