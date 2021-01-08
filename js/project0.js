@@ -1,11 +1,11 @@
 $( document ).ready(function() {
 
 // $('.line1,.line2,.line3,.display').css('opacity',0);
-$('.line1,.display').fadeTo(1000,0.8)
-$('.line2').fadeTo(2000,0.8)
-$('.line3').fadeTo(2500,0.8)
-$('h1').fadeTo(1000,0.8)
-$('.message').fadeTo(1000, 0.8)
+$('.line1,.display').fadeTo(1000,0.9)
+$('.line2').fadeTo(2000,0.9)
+$('.line3').fadeTo(2500,0.9)
+$('h1').fadeTo(1000,0.9)
+$('.message').fadeTo(1000, 0.9)
 
 
 
