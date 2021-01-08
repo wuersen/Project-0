@@ -1,11 +1,11 @@
 $( document ).ready(function() {
 
 // $('.line1,.line2,.line3,.display').css('opacity',0);
-$('.line1,.display').fadeTo(1000,0.9)
-$('.line2').fadeTo(1000,0.9)
-$('.line3').fadeTo(1000,0.9)
+$('.line1,.display').fadeTo(1000,1)
+$('.line2').fadeTo(1000,1)
+$('.line3').fadeTo(1000,1)
 $('h1').fadeTo(1000,0.9)
-$('.message').fadeTo(1000, 0.9)
+$('.message').fadeTo(1000, 1)
 
 $('#mixFruitTop').addClass('movingFruit').animate({'opacity': 1}, 500).animate({'opacity': 0}, 500).animate({'opacity': 1}, 500).animate({'opacity': 0}, 500).animate({'opacity': 1}, 500).animate({'opacity': 0}, 500).animate({'opacity': 1}, 500);
 
