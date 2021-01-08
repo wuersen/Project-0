@@ -131,8 +131,8 @@ $('#player1').text(` Player 🍋 : ${player1Score}`);
 
 $('#mixFruitTop, #mixFruitBtm, #mixFruitLeft , #mixFruitRight').animate({'opacity': 0}, 10);
 
-$('#mixFruitTop').text('🍋 🍋 🍋 🍋 🍋 🍋 🍋 🍋 🍋 🍋 🍋 🍋 🍋 🍋 🍋 ')
-$('#mixFruitBtm').text('🍋 🍋 🍋 🍋 🍋 🍋 🍋 🍋 🍋 🍋 🍋 🍋 🍋 🍋 🍋 ')
+$('#mixFruitTop').text('🍋 🍋 🍋 🍋 🍋 🍋 🍋 🍋 🍋 🍋 🍋 🍋 ')
+$('#mixFruitBtm').text('🍋 🍋 🍋 🍋 🍋 🍋 🍋 🍋 🍋 🍋 🍋 🍋 ')
 $('#mixFruitTop').addClass('movingFruit').animate({'opacity': 1}, 500).animate({'opacity': 0}, 500).animate({'opacity': 1}, 500).animate({'opacity': 0}, 500).animate({'opacity': 1}, 500).animate({'opacity': 0}, 500).animate({'opacity': 1}, 500);
 
 $('#mixFruitBtm').addClass('movingFruit').animate({'opacity': 1}, 500).animate({'opacity': 0}, 500).animate({'opacity': 1}, 500).animate({'opacity': 0}, 500).animate({'opacity': 1}, 500).animate({'opacity': 0}, 500).animate({'opacity': 1}, 500);
@@ -142,8 +142,8 @@ $('#mixFruitBtm').addClass('movingFruit').animate({'opacity': 1}, 500).animate({
   player2Score = player2Score + 1;
 $('#player2').text(` Player 🍊 : ${player2Score}`);
 
-$('#mixFruitTop').text('🍊 🍊 🍊 🍊 🍊 🍊 🍊 🍊 🍊 🍊 🍊 🍊 🍊 🍊 🍊 ')
-$('#mixFruitBtm').text('🍊 🍊 🍊 🍊 🍊 🍊 🍊 🍊 🍊 🍊 🍊 🍊 🍊 🍊 🍊 ')
+$('#mixFruitTop').text('🍊 🍊 🍊 🍊 🍊 🍊 🍊 🍊 🍊 🍊 🍊 🍊 ')
+$('#mixFruitBtm').text('🍊 🍊 🍊 🍊 🍊 🍊 🍊 🍊 🍊 🍊 🍊 🍊 ')
 
 $('#mixFruitTop').addClass('movingFruit').animate({'opacity': 1}, 500).animate({'opacity': 0}, 500).animate({'opacity': 1}, 500).animate({'opacity': 0}, 500).animate({'opacity': 1}, 500).animate({'opacity': 0}, 500).animate({'opacity': 1}, 500);
 
@@ -173,8 +173,8 @@ $('#mixFruitBtm').addClass('movingFruit').animate({'opacity': 1}, 500).animate({
     $('#player1 , #player2').css('border-color', 'orange');
 
 
-    $('#mixFruitTop').text('🍋 🍊 🍋 🍊 🍋 🍊 🍋 🍊 🍋 🍊 🍋 🍊 🍋 🍊 🍋 ')
-    $('#mixFruitBtm').text('🍋 🍊 🍋 🍊 🍋 🍊 🍋 🍊 🍋 🍊 🍋 🍊 🍋 🍊 🍋 ')
+    $('#mixFruitTop').text('🍋 🍊 🍋 🍊 🍋 🍊 🍋 🍊 🍋 🍊 🍋 🍊 ')
+    $('#mixFruitBtm').text('🍋 🍊 🍋 🍊 🍋 🍊 🍋 🍊 🍋 🍊 🍋 🍊 ')
     countTo9 = 0;
     if (player === 1){
        $('#player2').css('border-color', '#739900');

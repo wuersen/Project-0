@@ -50,6 +50,7 @@ text-shadow: 2px 4px orange;
 }
 
 .displayContainer{
+  text-align: center;
   margin-top: 20px;
   width:316px;
   margin:0 auto;
@@ -59,12 +60,13 @@ text-shadow: 2px 4px orange;
 
 
 .container {
+  text-align: center;
   width:500px;
   height:500px;
   margin:0 auto;
   font-family: 'Comfortaa', cursive;
   padding-bottom: 10px;
-  
+
 }
 
 
