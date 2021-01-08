@@ -68,18 +68,18 @@ text-shadow: 2px 4px orange;
 }
 
 .fruitContainer {
-  width:500px;
-  height:500px;
+  background-color: pink;
+
   margin:0 auto;
-  width:500px;
+  width:360px;
   height:500px;
 
 }
 
 .gameBoardContainer {
   position:absolute;
-  margin-left: 96px;
-  margin-top: 30px;
+  margin-left: 20px;
+  margin-top:25px;
   height:430px;
   width:320px;
 }
@@ -118,8 +118,8 @@ text-shadow: 2px 4px orange;
   height:40px
   width:39px;
   text-align:center;
-  margin-top:6px;
-  margin-left: 100px;
+  margin-top:1px;
+  margin-left: 26px;
   opacity:0;
 }
 
@@ -129,8 +129,8 @@ text-shadow: 2px 4px orange;
   height:40px
   width:39px;
   text-align:center;
-  margin-top:455px;
-  margin-left: 100px;
+  margin-top:451px;
+  margin-left: 26px;
   opacity:0;
 }
 
@@ -140,8 +140,8 @@ text-shadow: 2px 4px orange;
   font-size: 19.5;
   height:470px;
   width:20px;
-  margin-left:74px;
-  margin-top:12px;
+  margin-left:0px;
+  margin-top:9px;
 }
 
 #movingLemonRight {
@@ -150,8 +150,8 @@ text-shadow: 2px 4px orange;
   font-size: 19.5;
   height:470px;
   width:20px;
-  margin-left:415px;
-  margin-top:12px;
+  margin-left:338px;
+  margin-top:9px;
 }
 
 #movingOrangeTop{
@@ -160,8 +160,8 @@ text-shadow: 2px 4px orange;
   height:40px
   width:39px;
   text-align:center;
-  margin-top:6px;
-  margin-left: 100px;
+  margin-top:1px;
+  margin-left: 26px;
   opacity:0;
 }
 
@@ -171,8 +171,8 @@ text-shadow: 2px 4px orange;
   height:40px
   width:39px;
   text-align:center;
-  margin-top:455px;
-  margin-left: 100px;
+  margin-top:451px;
+  margin-left: 26px;
   opacity:0;
 }
 
@@ -182,8 +182,8 @@ text-shadow: 2px 4px orange;
   font-size: 19.5;
   height:470px;
   width:20px;
-  margin-left:74px;
-  margin-top:12px;
+  margin-left:0px;
+  margin-top:9px;
 }
 
 #movingOrangeRight {
@@ -192,8 +192,8 @@ text-shadow: 2px 4px orange;
   font-size: 19.5;
   height:470px;
   width:20px;
-  margin-left:415px;
-  margin-top:12px;
+  margin-left:338px;
+  margin-top:9px;
 }
 
 #mixFruitTop{
@@ -202,8 +202,8 @@ text-shadow: 2px 4px orange;
   height:40px
   width:39px;
   text-align:center;
-  margin-top:6px;
-  margin-left: 100px;
+  margin-top:1px;
+  margin-left: 26px;
   opacity:0;
 }
 
@@ -213,8 +213,8 @@ text-shadow: 2px 4px orange;
   height:40px
   width:39px;
   text-align:center;
-  margin-top:455px;
-  margin-left: 100px;
+  margin-top:451px;
+  margin-left: 26px;
   opacity:0;
 }
 
@@ -224,8 +224,8 @@ text-shadow: 2px 4px orange;
   font-size: 19.5;
   height:470px;
   width:20px;
-  margin-left:74px;
-  margin-top:12px;
+  margin-left:0px;
+  margin-top:9px;
 }
 
 #mixFruitRight {
@@ -234,6 +234,6 @@ text-shadow: 2px 4px orange;
   font-size: 19.5;
   height:470px;
   width:20px;
-  margin-left:415px;
-  margin-top:12px;
+  margin-left:338px;
+  margin-top:9px;
 }
