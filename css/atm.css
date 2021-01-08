@@ -8,7 +8,7 @@ text-align: center;
 color:yellow;
 width:320px;
 margin:0 auto;
-margin-bottom: 10px;
+margin-bottom: 0px;
 opacity:0;
 font-size: 38px;
 text-shadow: 2px 4px orange;
@@ -50,6 +50,7 @@ text-shadow: 2px 4px orange;
 }
 
 .displayContainer{
+  margin-top: 20px;
   width:316px;
   margin:0 auto;
 
@@ -58,11 +59,29 @@ text-shadow: 2px 4px orange;
 
 
 .container {
-  width:100%;
-
+  width:500px;
+  height:500px;
+  margin:0 auto;
   font-family: 'Comfortaa', cursive;
   padding-bottom: 10px;
 
+}
+
+.fruitContainer {
+  width:500px;
+  height:500px;
+  margin:0 auto;
+  width:500px;
+  height:500px;
+
+}
+
+.gameBoardContainer {
+  position:absolute;
+  margin-left: 96px;
+  margin-top: 30px;
+  height:430px;
+  width:320px;
 }
 
 .line1, .line2, .line3{
@@ -93,6 +112,128 @@ text-shadow: 2px 4px orange;
   }
 }
 
-.movingImage {
-  background-image: url('images/lemon.jpg');
+#movingLemonTop{
+  position:absolute;
+  font-size: 18.5;
+  height:40px
+  width:39px;
+  text-align:center;
+  margin-top:6px;
+  margin-left: 100px;
+  opacity:0;
+}
+
+#movingLemonBtm {
+  position:absolute;
+  font-size: 18.5;
+  height:40px
+  width:39px;
+  text-align:center;
+  margin-top:455px;
+  margin-left: 100px;
+  opacity:0;
+}
+
+#movingLemonLeft {
+  position: absolute;
+  opacity:0;
+  font-size: 19.5;
+  height:470px;
+  width:20px;
+  margin-left:74px;
+  margin-top:12px;
+}
+
+#movingLemonRight {
+  position: absolute;
+  opacity:0;
+  font-size: 19.5;
+  height:470px;
+  width:20px;
+  margin-left:415px;
+  margin-top:12px;
+}
+
+#movingOrangeTop{
+  position:absolute;
+  font-size: 18.5;
+  height:40px
+  width:39px;
+  text-align:center;
+  margin-top:6px;
+  margin-left: 100px;
+  opacity:0;
+}
+
+#movingOrangeBtm {
+  position:absolute;
+  font-size: 18.5;
+  height:40px
+  width:39px;
+  text-align:center;
+  margin-top:455px;
+  margin-left: 100px;
+  opacity:0;
+}
+
+#movingOrangeLeft {
+  position: absolute;
+  opacity:0;
+  font-size: 19.5;
+  height:470px;
+  width:20px;
+  margin-left:74px;
+  margin-top:12px;
+}
+
+#movingOrangeRight {
+  position: absolute;
+  opacity:0;
+  font-size: 19.5;
+  height:470px;
+  width:20px;
+  margin-left:415px;
+  margin-top:12px;
+}
+
+#mixFruitTop{
+  position:absolute;
+  font-size: 18.5;
+  height:40px
+  width:39px;
+  text-align:center;
+  margin-top:6px;
+  margin-left: 100px;
+  opacity:0;
+}
+
+#mixFruitBtm {
+  position:absolute;
+  font-size: 18.5;
+  height:40px
+  width:39px;
+  text-align:center;
+  margin-top:455px;
+  margin-left: 100px;
+  opacity:0;
+}
+
+#mixFruitLeft {
+  position: absolute;
+  opacity:0;
+  font-size: 19.5;
+  height:470px;
+  width:20px;
+  margin-left:74px;
+  margin-top:12px;
+}
+
+#mixFruitRight {
+  position: absolute;
+  opacity:0;
+  font-size: 19.5;
+  height:470px;
+  width:20px;
+  margin-left:415px;
+  margin-top:12px;
 }

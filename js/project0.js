@@ -2,40 +2,58 @@ $( document ).ready(function() {
 
 // $('.line1,.line2,.line3,.display').css('opacity',0);
 $('.line1,.display').fadeTo(1000,0.9)
-$('.line2').fadeTo(2000,0.9)
-$('.line3').fadeTo(2500,0.9)
+$('.line2').fadeTo(1000,0.9)
+$('.line3').fadeTo(1000,0.9)
 $('h1').fadeTo(1000,0.9)
 $('.message').fadeTo(1000, 0.9)
+
+$('#mixFruitTop').addClass('movingFruit').animate({'opacity': 1}, 500).animate({'opacity': 0}, 500).animate({'opacity': 1}, 500).animate({'opacity': 0}, 500).animate({'opacity': 1}, 500).animate({'opacity': 0}, 500);
+
+$('#mixFruitBtm').addClass('movingFruit').animate({'opacity': 1}, 500).animate({'opacity': 0}, 500).animate({'opacity': 1}, 500).animate({'opacity': 0}, 500).animate({'opacity': 1}, 500).animate({'opacity': 0}, 500);
+
+$('#mixFruitLeft').addClass('movingFruit').animate({'opacity': 1}, 500).animate({'opacity': 0}, 500).animate({'opacity': 1}, 500).animate({'opacity': 0}, 500).animate({'opacity': 1}, 500).animate({'opacity': 0}, 500);
+
+$('#mixFruitRight').addClass('movingFruit').animate({'opacity': 1}, 500).animate({'opacity': 0}, 500).animate({'opacity': 1}, 500).animate({'opacity': 0}, 500).animate({'opacity': 1}, 500).animate({'opacity': 0}, 500);
 
 
 
 
 //global viariables
 let countTo9 = 0;
+let player = 0 //player1 = 1, player2 = 2
+
 let player1Score = 0;
 let player2Score = 0;
-let player = 0 //player1 = 1, player2 = 2
+
 
 
 
 /////////////////         1. Choose player           ///////////////////////
 $('.display').click(function(){
-   $('.display').css('border-color','orange')
-   $(this).css('border-color','#739900');
-   $('.message').text($(this).text().slice(8,10))
-   $('.message').text(`${$(this).text().slice(8,10)} turn`);
-   $('.display').addClass('selectionMade')
-   // $(this).addClass('selected')
-   if($(this).text().includes('🍊')){
+
+
+   if($('.message').text().includes('continue')){
+
+   }else if($(this).text().includes('🍊')){
+     $('.display').css('border-color','orange')
+     $(this).css('border-color','#739900');
+     $('.message').text($(this).text().slice(8,10))
+     $('.message').text(`${$(this).text().slice(8,10)} turn`);
+     $('.display').addClass('selectionMade')
     player = 2;
    $('.box').addClass('playOrange');
-   }
 
-   else if($(this).text().includes('🍋')){
+   } else if($(this).text().includes('🍋')){
+     $('.display').css('border-color','orange')
+     $(this).css('border-color','#739900');
+     $('.message').text($(this).text().slice(8,10))
+     $('.message').text(`${$(this).text().slice(8,10)} turn`);
+     $('.display').addClass('selectionMade')
     player = 1;
    $('.box').removeClass('playOrange');
+
    }
-}) //end of function
+}) //end of Choose player function
 
 //////////////              2. Play game              /////////////////////
 $( '.box' ).click(function() {
@@ -46,7 +64,7 @@ $( '.box' ).click(function() {
     else if($('.box').hasClass('gameFinished')){alert('Click continue to restart')}
 
 //make objects appear on game board
-    else if ($(this).text()!==''){} //each spot can only be selected once
+    else if ($(this).text()!==''){} //each squre can only be selected once
 ////switch symbols between players
     else if ($(this).hasClass('playOrange')){
       $(this).text('🍊');
@@ -113,9 +131,30 @@ if ($('.display').hasClass('gameFinished')){  //do not update more then once
 }else if ($('.message').text().includes('🍋 wins')){
   player1Score = player1Score + 1;
 $('#player1').text(` Player 🍋 : ${player1Score}`);
+
+$('#mixFruitTop, #mixFruitBtm, #mixFruitLeft , #mixFruitRight').animate({'opacity': 0}, 10);
+
+
+$('#movingLemonTop').addClass('movingFruit').animate({'opacity': 1}, 500).animate({'opacity': 0}, 500).animate({'opacity': 1}, 500).animate({'opacity': 0}, 500).animate({'opacity': 1}, 500).animate({'opacity': 0}, 500).animate({'opacity': 1}, 500);
+
+$('#movingLemonBtm').addClass('movingFruit').animate({'opacity': 1}, 500).animate({'opacity': 0}, 500).animate({'opacity': 1}, 500).animate({'opacity': 0}, 500).animate({'opacity': 1}, 500).animate({'opacity': 0}, 500).animate({'opacity': 1}, 500);
+
+$('#movingLemonLeft').addClass('movingFruit').animate({'opacity': 1}, 500).animate({'opacity': 0}, 500).animate({'opacity': 1}, 500).animate({'opacity': 0}, 500).animate({'opacity': 1}, 500).animate({'opacity': 0}, 500).animate({'opacity': 1}, 500);
+
+$('#movingLemonRight').addClass('movingFruit').animate({'opacity': 1}, 500).animate({'opacity': 0}, 500).animate({'opacity': 1}, 500).animate({'opacity': 0}, 500).animate({'opacity': 1}, 500).animate({'opacity': 0}, 500).animate({'opacity': 1}, 500);
 }else if ($('.message').text().includes('🍊 wins')){
   player2Score = player2Score + 1;
 $('#player2').text(` Player 🍊 : ${player2Score}`);
+
+$('#mixFruitTop, #mixFruitBtm, #mixFruitLeft , #mixFruitRight').animate({'opacity': 0}, 10);
+
+$('#movingOrangeTop').addClass('movingFruit').animate({'opacity': 1}, 500).animate({'opacity': 0}, 500).animate({'opacity': 1}, 500).animate({'opacity': 0}, 500).animate({'opacity': 1}, 500).animate({'opacity': 0}, 500).animate({'opacity': 1}, 500);
+
+$('#movingOrangeBtm').addClass('movingFruit').animate({'opacity': 1}, 500).animate({'opacity': 0}, 500).animate({'opacity': 1}, 500).animate({'opacity': 0}, 500).animate({'opacity': 1}, 500).animate({'opacity': 0}, 500).animate({'opacity': 1}, 500);
+
+$('#movingOrangeLeft').addClass('movingFruit').animate({'opacity': 1}, 500).animate({'opacity': 0}, 500).animate({'opacity': 1}, 500).animate({'opacity': 0}, 500).animate({'opacity': 1}, 500).animate({'opacity': 0}, 500).animate({'opacity': 1}, 500);
+
+$('#movingOrangeRight').addClass('movingFruit').animate({'opacity': 1}, 500).animate({'opacity': 0}, 500).animate({'opacity': 1}, 500).animate({'opacity': 0}, 500).animate({'opacity': 1}, 500).animate({'opacity': 0}, 500).animate({'opacity': 1}, 500);
 }
 
 //End the game after one player wins (so keep clicking on .box wont mess up result score or game result)
@@ -123,10 +162,10 @@ $('#player2').text(` Player 🍊 : ${player2Score}`);
     $('.box').addClass('gameFinished')
     $('.display').addClass('gameFinished')
     }
-}); ///////////// end of 2. play game function /////////////////////////////
+});
 
 
-// reset after each game
+////////////////3. reset game function  ///////////////////////////////////
   $('.message' ).click(function() {
     $('.box').text('');
     $('.box').css('background-color','yellow');
@@ -137,6 +176,9 @@ $('#player2').text(` Player 🍊 : ${player2Score}`);
     $('.display').removeClass('gameFinished')
     $('.message').css('background-color', 'orange');
     $('#player1 , #player2').css('border-color', 'orange');
+
+    $('#movingLemonTop, #movingLemonBtm, #movingLemonLeft , #movingLemonRight').animate({'opacity': 0}, 500);
+    $('#movingOrangeTop, #movingOrangeBtm, #movingOrangeLeft , #movingOrangeRight').animate({'opacity': 0}, 500)
     countTo9 = 0;
     if (player === 1){
        $('#player2').css('border-color', '#739900');
