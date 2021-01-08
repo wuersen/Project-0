@@ -7,6 +7,9 @@ $('.line3').fadeTo(2500,0.8)
 $('h1').fadeTo(1000,0.8)
 $('.message').fadeTo(1000, 0.8)
 
+
+
+
 //global viariables
 let countTo9 = 0;
 let player1Score = 0;

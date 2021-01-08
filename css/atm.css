@@ -1,7 +1,8 @@
 body{
-  background-color:lightyellow;
+background-color:#d9ffcc;
 }
 h1 {
+
 font-weight:600;
 text-align: center;
 color:yellow;
@@ -58,8 +59,10 @@ text-shadow: 2px 4px orange;
 
 .container {
   width:100%;
-  background-color: lightyellow;
+
   font-family: 'Comfortaa', cursive;
+  padding-bottom: 10px;
+
 }
 
 .line1, .line2, .line3{
@@ -88,4 +91,8 @@ text-shadow: 2px 4px orange;
   h1 {
   font-size: 30px;
   }
+}
+
+.movingImage {
+  background-image: url('images/lemon.jpg');
 }

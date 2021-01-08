@@ -1,5 +1,7 @@
 Tic Tac Toe
 
+Published at https://wuersen.github.io/Project-0/
+
 Simple game created from scratch using HTML, CSS and Javascript
 
 My first project at General Assembly
