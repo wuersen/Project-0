@@ -7,13 +7,10 @@ $('.line3').fadeTo(1000,0.9)
 $('h1').fadeTo(1000,0.9)
 $('.message').fadeTo(1000, 0.9)
 
-$('#mixFruitTop').addClass('movingFruit').animate({'opacity': 1}, 500).animate({'opacity': 0}, 500).animate({'opacity': 1}, 500).animate({'opacity': 0}, 500).animate({'opacity': 1}, 500).animate({'opacity': 0}, 500);
+$('#mixFruitTop').addClass('movingFruit').animate({'opacity': 1}, 500).animate({'opacity': 0}, 500).animate({'opacity': 1}, 500).animate({'opacity': 0}, 500).animate({'opacity': 1}, 500).animate({'opacity': 0}, 500).animate({'opacity': 1}, 500);
 
-$('#mixFruitBtm').addClass('movingFruit').animate({'opacity': 1}, 500).animate({'opacity': 0}, 500).animate({'opacity': 1}, 500).animate({'opacity': 0}, 500).animate({'opacity': 1}, 500).animate({'opacity': 0}, 500);
+$('#mixFruitBtm').addClass('movingFruit').animate({'opacity': 1}, 500).animate({'opacity': 0}, 500).animate({'opacity': 1}, 500).animate({'opacity': 0}, 500).animate({'opacity': 1}, 500).animate({'opacity': 0}, 500).animate({'opacity': 1}, 500);
 
-$('#mixFruitLeft').addClass('movingFruit').animate({'opacity': 1}, 500).animate({'opacity': 0}, 500).animate({'opacity': 1}, 500).animate({'opacity': 0}, 500).animate({'opacity': 1}, 500).animate({'opacity': 0}, 500);
-
-$('#mixFruitRight').addClass('movingFruit').animate({'opacity': 1}, 500).animate({'opacity': 0}, 500).animate({'opacity': 1}, 500).animate({'opacity': 0}, 500).animate({'opacity': 1}, 500).animate({'opacity': 0}, 500);
 
 
 
@@ -134,27 +131,25 @@ $('#player1').text(` Player 🍋 : ${player1Score}`);
 
 $('#mixFruitTop, #mixFruitBtm, #mixFruitLeft , #mixFruitRight').animate({'opacity': 0}, 10);
 
+$('#mixFruitTop').text('🍋 🍋 🍋 🍋 🍋 🍋 🍋 🍋 🍋 🍋 🍋 🍋 🍋 🍋 🍋 ')
+$('#mixFruitBtm').text('🍋 🍋 🍋 🍋 🍋 🍋 🍋 🍋 🍋 🍋 🍋 🍋 🍋 🍋 🍋 ')
+$('#mixFruitTop').addClass('movingFruit').animate({'opacity': 1}, 500).animate({'opacity': 0}, 500).animate({'opacity': 1}, 500).animate({'opacity': 0}, 500).animate({'opacity': 1}, 500).animate({'opacity': 0}, 500).animate({'opacity': 1}, 500);
 
-$('#movingLemonTop').addClass('movingFruit').animate({'opacity': 1}, 500).animate({'opacity': 0}, 500).animate({'opacity': 1}, 500).animate({'opacity': 0}, 500).animate({'opacity': 1}, 500).animate({'opacity': 0}, 500).animate({'opacity': 1}, 500);
+$('#mixFruitBtm').addClass('movingFruit').animate({'opacity': 1}, 500).animate({'opacity': 0}, 500).animate({'opacity': 1}, 500).animate({'opacity': 0}, 500).animate({'opacity': 1}, 500).animate({'opacity': 0}, 500).animate({'opacity': 1}, 500);
 
-$('#movingLemonBtm').addClass('movingFruit').animate({'opacity': 1}, 500).animate({'opacity': 0}, 500).animate({'opacity': 1}, 500).animate({'opacity': 0}, 500).animate({'opacity': 1}, 500).animate({'opacity': 0}, 500).animate({'opacity': 1}, 500);
 
-$('#movingLemonLeft').addClass('movingFruit').animate({'opacity': 1}, 500).animate({'opacity': 0}, 500).animate({'opacity': 1}, 500).animate({'opacity': 0}, 500).animate({'opacity': 1}, 500).animate({'opacity': 0}, 500).animate({'opacity': 1}, 500);
-
-$('#movingLemonRight').addClass('movingFruit').animate({'opacity': 1}, 500).animate({'opacity': 0}, 500).animate({'opacity': 1}, 500).animate({'opacity': 0}, 500).animate({'opacity': 1}, 500).animate({'opacity': 0}, 500).animate({'opacity': 1}, 500);
 }else if ($('.message').text().includes('🍊 wins')){
   player2Score = player2Score + 1;
 $('#player2').text(` Player 🍊 : ${player2Score}`);
 
-$('#mixFruitTop, #mixFruitBtm, #mixFruitLeft , #mixFruitRight').animate({'opacity': 0}, 10);
+$('#mixFruitTop').text('🍊 🍊 🍊 🍊 🍊 🍊 🍊 🍊 🍊 🍊 🍊 🍊 🍊 🍊 🍊 ')
+$('#mixFruitBtm').text('🍊 🍊 🍊 🍊 🍊 🍊 🍊 🍊 🍊 🍊 🍊 🍊 🍊 🍊 🍊 ')
 
-$('#movingOrangeTop').addClass('movingFruit').animate({'opacity': 1}, 500).animate({'opacity': 0}, 500).animate({'opacity': 1}, 500).animate({'opacity': 0}, 500).animate({'opacity': 1}, 500).animate({'opacity': 0}, 500).animate({'opacity': 1}, 500);
+$('#mixFruitTop').addClass('movingFruit').animate({'opacity': 1}, 500).animate({'opacity': 0}, 500).animate({'opacity': 1}, 500).animate({'opacity': 0}, 500).animate({'opacity': 1}, 500).animate({'opacity': 0}, 500).animate({'opacity': 1}, 500);
 
-$('#movingOrangeBtm').addClass('movingFruit').animate({'opacity': 1}, 500).animate({'opacity': 0}, 500).animate({'opacity': 1}, 500).animate({'opacity': 0}, 500).animate({'opacity': 1}, 500).animate({'opacity': 0}, 500).animate({'opacity': 1}, 500);
+$('#mixFruitBtm').addClass('movingFruit').animate({'opacity': 1}, 500).animate({'opacity': 0}, 500).animate({'opacity': 1}, 500).animate({'opacity': 0}, 500).animate({'opacity': 1}, 500).animate({'opacity': 0}, 500).animate({'opacity': 1}, 500);
 
-$('#movingOrangeLeft').addClass('movingFruit').animate({'opacity': 1}, 500).animate({'opacity': 0}, 500).animate({'opacity': 1}, 500).animate({'opacity': 0}, 500).animate({'opacity': 1}, 500).animate({'opacity': 0}, 500).animate({'opacity': 1}, 500);
 
-$('#movingOrangeRight').addClass('movingFruit').animate({'opacity': 1}, 500).animate({'opacity': 0}, 500).animate({'opacity': 1}, 500).animate({'opacity': 0}, 500).animate({'opacity': 1}, 500).animate({'opacity': 0}, 500).animate({'opacity': 1}, 500);
 }
 
 //End the game after one player wins (so keep clicking on .box wont mess up result score or game result)
@@ -177,8 +172,9 @@ $('#movingOrangeRight').addClass('movingFruit').animate({'opacity': 1}, 500).ani
     $('.message').css('background-color', 'orange');
     $('#player1 , #player2').css('border-color', 'orange');
 
-    $('#movingLemonTop, #movingLemonBtm, #movingLemonLeft , #movingLemonRight').animate({'opacity': 0}, 500);
-    $('#movingOrangeTop, #movingOrangeBtm, #movingOrangeLeft , #movingOrangeRight').animate({'opacity': 0}, 500)
+
+    $('#mixFruitTop').text('🍋 🍊 🍋 🍊 🍋 🍊 🍋 🍊 🍋 🍊 🍋 🍊 🍋 🍊 🍋 ')
+    $('#mixFruitBtm').text('🍋 🍊 🍋 🍊 🍋 🍊 🍋 🍊 🍋 🍊 🍋 🍊 🍋 🍊 🍋 ')
     countTo9 = 0;
     if (player === 1){
        $('#player2').css('border-color', '#739900');
